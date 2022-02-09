@@ -17,7 +17,6 @@ import kotlinx.coroutines.launch
 import uz.pdp.roundedtask.R
 import uz.pdp.roundedtask.adapter.CharAdapter
 import uz.pdp.roundedtask.databinding.FragmentHomeBinding
-import uz.pdp.roundedtask.utils.RecyclerViewItemDecoration
 import uz.pdp.roundedtask.utils.hide
 import uz.pdp.roundedtask.utils.show
 import uz.pdp.roundedtask.viewmodel.CharViewModel
@@ -60,10 +59,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 startActivity(i)
             }
         })
-        binding.rv.apply {
-            setHasFixedSize(true)
-            addItemDecoration(RecyclerViewItemDecoration())
-        }
 
         binding.rv.adapter = charAdapter
 
