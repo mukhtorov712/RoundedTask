@@ -5,11 +5,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.StateFlow
 import uz.pdp.roundedtask.database.entity.CharEntity
-import uz.pdp.roundedtask.model.Result
-import uz.pdp.roundedtask.networking.ApiService
-import uz.pdp.roundedtask.repository.CharDataSource
 import uz.pdp.roundedtask.repository.CharRepository
 import javax.inject.Inject
 
